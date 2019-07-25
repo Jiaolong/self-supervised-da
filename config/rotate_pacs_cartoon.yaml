@@ -1,0 +1,85 @@
+exp_name: rotate_pacs_cartoon_2
+
+random_seed: 300
+mode: train
+n_classes: 7
+aux_classes: 3
+method: 'rotate'
+
+network:
+    arch: resnet18
+
+datasets:
+    src:
+        type: 'rotate'
+        name: ['art_painting', 'photo', 'sketch']
+        batch_size: 128
+        num_workers: 4
+        limit: false
+        val_size: 0.1
+        bias_whole_image: 0.7
+        aux_classes: 3
+        img_transform:
+            jitter: 0
+            random_horiz_flip: 0
+            random_resize_crop:
+                size: [222, 222]
+                scale: [0.8, 1.0]
+        normalize:
+            mean: [0.485, 0.456, 0.406]
+            std: [0.229, 0.224, 0.225]
+    tar:
+        type: 'rotate'
+        name: 'cartoon'
+        split: train
+        batch_size: 128
+        num_workers: 4
+        limit: false
+        aux_classes: 3
+        bias_whole_image: 0.7
+        img_transform:
+            jitter: 0
+            random_horiz_flip: 0
+            random_resize_crop:
+                size: [222, 222]
+                scale: [0.8, 1.0]
+        normalize:
+            mean: [0.485, 0.456, 0.406]
+            std: [0.229, 0.224, 0.225]
+
+    test:
+        type: 'rotate'
+        name: 'cartoon'
+        split: test
+        batch_size: 128
+        num_workers: 4
+        limit: false
+        aux_classes: 3
+        img_transform:
+            jitter: 0
+            random_resize_crop:
+                size: [222, 222]
+        normalize:
+            mean: [0.485, 0.456, 0.406]
+            std: [0.229, 0.224, 0.225]
+
+testing:
+    model: ''
+
+training:
+    resume: ''
+    num_print_epoch: 10
+    num_epochs: 30
+    optimizer:
+        name: 'sgd'
+        lr: 0.001
+        weight_decay: 0.0005
+        momentum: 0.9
+        nesterov: true
+    lr_scheduler:
+        name: step
+        step_size: 24 # num_epochs * 0.8
+    src_aux_weight: 0.7
+    tar_aux_weight: 0.7
+    tar_entropy_weight: 0.1
+    only_non_scrambled: false
