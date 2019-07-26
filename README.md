@@ -45,7 +45,7 @@ For example:
 python3 main.py --config configs/rotate_pacs_photo.yaml
 ```
 
-To reproduce the results, running each experiment with randmom seed `100, 200, 300` for three repeatitions.
+To reproduce the results, running each experiment for three repeatitions with random seeds from `100`, `200` and `300`.
 
 ## Results
 
