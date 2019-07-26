@@ -1,6 +1,17 @@
 Self-supervised Domain Adaptation
 =================================
 
+Repository for the arXiv paper ["Self-supervised Domain adaptation for Computer Vision Tasks"](https://arxiv.org/abs/1907.10915).
+
+```
+@article{self-supervised-da:2019,
+  title={Self-supervised Domain Adaptation for Computer Vision Tasks},
+  author={Jiaolong, Xu and Liang, Xiao and Antonio M. López},
+  journal={arXiv preprint arXiv:1907.10915},
+  year={2019}
+}
+```
+
 ## Requirements
 
 - pytorch 1.0+
