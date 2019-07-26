@@ -14,21 +14,25 @@ Repository for the arXiv paper ["Self-supervised Domain adaptation for Computer 
 
 ## Requirements
 
+- python3.5+
+
 - pytorch 1.0+
 
 ## Prepare dataset
 
 Please find the PACS dataset from [this link](http://www.eecs.qmul.ac.uk/~dl307/project_iccv2017)
 
-The directories of the dataset is as following:
+The directories of the dataset are as following:
 
 ```
-datasets/PACS
-└── kfold
-    ├── art_painting
-    ├── cartoon
-    ├── photo
-    └── sketch
+.
+├── datasets
+│   └── PACS
+│       └── kfold
+│           ├── art_painting
+│           ├── cartoon
+│           ├── photo
+│           └── sketch
 ```
 
 ## Running experiments
