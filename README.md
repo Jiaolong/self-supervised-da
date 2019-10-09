@@ -55,7 +55,7 @@ To reproduce the results, running each experiment for three repeatitions with ra
 | JigGen[1]  | 84.88 |81.07 |79.05 |97.96 |85.74|
 |Ours(SRC) |79.33 |76.75 |64.40 |96.39 |79.22|
 | Ours(Jigsaw) |84.93 |83.85 |69.04 |93.92 |82.94|
-|Ours(Rot) |89.35 |84.14 |79.54 |98.24 |87.82|
+|Ours(Rot) |89.35 |84.14 |74.49 |98.24 |86.56|
 
 ## Acknowledgement
 
