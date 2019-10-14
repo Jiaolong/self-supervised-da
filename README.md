@@ -1,8 +1,7 @@
 Self-supervised Domain Adaptation
 =================================
 
-Repository for the arXiv paper ["Self-supervised Domain adaptation for Computer Vision Tasks"](https://arxiv.org/abs/1907.10915).
-
+Repository for the arXiv paper ["Self-supervised Domain adaptation for Computer Vision Tasks"](https://arxiv.org/pdf/1907.10915v2.pdf).
 ```
 @article{self-supervised-da:2019,
   title={Self-supervised Domain Adaptation for Computer Vision Tasks},
