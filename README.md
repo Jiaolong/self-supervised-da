@@ -6,7 +6,7 @@ Repository for the arXiv paper ["Self-supervised Domain adaptation for Computer 
 @article{self-supervised-da:2019,
   title={Self-supervised Domain Adaptation for Computer Vision Tasks},
   author={Jiaolong, Xu and Liang, Xiao and Antonio M. López},
-  journal={arXiv preprint arXiv:1907.10915},
+  journal={IEEE Access},
   year={2019}
 }
 ```
