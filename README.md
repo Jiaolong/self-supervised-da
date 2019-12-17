@@ -1,12 +1,14 @@
 Self-supervised Domain Adaptation
 =================================
 
-Repository for the arXiv paper ["Self-supervised Domain adaptation for Computer Vision Tasks"](https://arxiv.org/pdf/1907.10915v2.pdf).
+Repository for the paper ["Self-supervised Domain adaptation for Computer Vision Tasks"](https://arxiv.org/abs/1907.10915v3).
 ```
 @article{self-supervised-da:2019,
   title={Self-supervised Domain Adaptation for Computer Vision Tasks},
   author={Jiaolong, Xu and Liang, Xiao and Antonio M. López},
   journal={IEEE Access},
+  volume={7},
+  pages={156694-156706}
   year={2019}
 }
 ```
